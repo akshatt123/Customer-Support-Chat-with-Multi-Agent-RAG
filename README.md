@@ -2,7 +2,7 @@
 
 This is a **Customer Support Chat Application** built using Python, LangGraph, Qdrant, and OpenAI. It uses a **Retrieval-Augmented Generation (RAG)** approach where multiple specialized AI agents work together to help users plan trips, book flights, hotels, and excursions.
 
-## ?? How It Works
+## How It Works
 ![System Architecture](assets/multi-agent-rag-system-graph.png)
 The system is designed as a graph of specialized agents:
 
@@ -14,7 +14,7 @@ The system is designed as a graph of specialized agents:
     *   **Excursion Assistant:** Recommends trip activities.
 3.  **Vector Database (RAG):** The assistants use **Qdrant** to search through a database of travel options (flights, hotels, etc.) to provide accurate, real-world information.
 
-## ??? Tech Stack
+## Tech Stack
 
 *   **Python:** 3.12+
 *   **LangGraph & LangChain:** For orchestrating the multi-agent workflow.
@@ -22,7 +22,7 @@ The system is designed as a graph of specialized agents:
 *   **OpenAI:** LLM for reasoning and generating responses.
 *   **SQLite:** Local database for storing transactional data.
 ![Database Schema](assets/travel_db_schema.png)
-## ?? Installation & Setup
+## Installation & Setup
 
 ### 1. Prerequisites
 *   Python 3.12+
@@ -69,7 +69,7 @@ If your database is empty, run the vectorizer to process data and load it into Q
 python -m vectorizer.app.main
 ```
 
-## ?? Running the Application
+## Running the Application
 
 To start the customer support chat:
 
@@ -77,7 +77,7 @@ To start the customer support chat:
 python -m customer_support_chat.app.main
 ```
 
-## ?? Project Structure
+## Project Structure
 
 *   `customer_support_chat/`: Main application source code.
     *   `app/assistants/`: Logic for different specialized agents.
